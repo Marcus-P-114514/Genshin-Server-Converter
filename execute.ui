@@ -242,6 +242,22 @@ border-color: rgb(33, 150, 243);</string>
     <bool>true</bool>
    </property>
   </widget>
+  <widget class="QLabel" name="TMP">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>590</y>
+     <width>201</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
   <zorder>graphicsView</zorder>
   <zorder>Start_exec</zorder>
   <zorder>label</zorder>
@@ -253,6 +269,7 @@ border-color: rgb(33, 150, 243);</string>
   <zorder>label_6</zorder>
   <zorder>status_exec</zorder>
   <zorder>StepNum</zorder>
+  <zorder>TMP</zorder>
  </widget>
  <resources/>
  <connections/>

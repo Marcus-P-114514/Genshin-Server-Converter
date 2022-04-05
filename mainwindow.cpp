@@ -32,6 +32,22 @@ void MainWindow::on_Update_Datapack_Info_clicked()
 
 void MainWindow::on_Convert_Start_clicked()
 {
+    QString cmdexe=QCoreApplication::applicationDirPath()+"/data/core/work.txt";
+    QFile file(cmdexe);
+    ui->Game_Dir->setReadOnly(false);
+
+    file.open(QFile::WriteOnly | QIODevice::Text);
+        QTextStream out(&file);
+        out<<ui->Game_Dir->text();
+        file.close();
+
+    QString installer_directionary = ui->Installer_Dir->text();
+    QString game_directionary = ui->Game_Dir->text();
+    QSettings settings("./data/core/config.ini", QSettings::IniFormat);
+        settings.beginGroup("location");
+        settings.setValue("installer", installer_directionary);
+        settings.setValue("game", game_directionary);
+        settings.endGroup();
     execute d;
             d.exec();
 }
