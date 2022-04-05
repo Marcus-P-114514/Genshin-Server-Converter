@@ -32,6 +32,6 @@ void MainWindow::on_Update_Datapack_Info_clicked()
 
 void MainWindow::on_Convert_Start_clicked()
 {
-    checklist d;
+    execute d;
             d.exec();
 }

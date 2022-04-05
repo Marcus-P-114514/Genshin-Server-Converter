@@ -4,7 +4,7 @@
 #include "QFile"
 #include "QFileDialog"
 #include "QSettings" //read ini
-#include "checklist.h"
+#include "execute.h"
 
 #include <QDialog>
 #include <QMainWindow>

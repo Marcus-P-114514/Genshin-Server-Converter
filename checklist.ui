@@ -79,6 +79,28 @@
     <string>现在不行</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="start_prog">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>230</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Han Sans</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>开始转换</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

@@ -1,6 +1,8 @@
 #ifndef CHECKLIST_H
 #define CHECKLIST_H
 
+#include "prep.h"
+
 #include <QDialog>
 
 namespace Ui {
@@ -17,6 +19,8 @@ public:
 
 private slots:
     void on_start_check_clicked();
+
+    void on_start_prog_clicked();
 
 private:
     Ui::checklist *ui;
